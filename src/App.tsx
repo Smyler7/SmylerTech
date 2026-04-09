@@ -1,7 +1,7 @@
 import { motion } from "motion/react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { ArrowRight, Code2, Cpu, Globe, Lock, Menu, Shield, Zap, Check } from "lucide-react";
+import { ArrowRight, Code2, Cpu, Globe, Lock, Menu, Shield, Zap, Check, Github, Twitter, Linkedin } from "lucide-react";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
 const AnimatedLogo = () => (
@@ -454,10 +454,15 @@ export default function App() {
                 Building the foundational infrastructure for the next generation of software companies.
               </p>
               <div className="flex gap-4">
-                {/* Social placeholders */}
-                <div className="w-8 h-8 rounded-full bg-secondary flex items-center justify-center hover:bg-primary/20 cursor-pointer transition-colors" />
-                <div className="w-8 h-8 rounded-full bg-secondary flex items-center justify-center hover:bg-primary/20 cursor-pointer transition-colors" />
-                <div className="w-8 h-8 rounded-full bg-secondary flex items-center justify-center hover:bg-primary/20 cursor-pointer transition-colors" />
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-full bg-secondary flex items-center justify-center hover:bg-primary/20 cursor-pointer transition-colors">
+                  <Github className="w-4 h-4" />
+                </a>
+                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-full bg-secondary flex items-center justify-center hover:bg-primary/20 cursor-pointer transition-colors">
+                  <Twitter className="w-4 h-4" />
+                </a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-full bg-secondary flex items-center justify-center hover:bg-primary/20 cursor-pointer transition-colors">
+                  <Linkedin className="w-4 h-4" />
+                </a>
               </div>
             </div>
             
