@@ -28,7 +28,7 @@ const AnimatedLogo = () => (
       initial={{ rotate: 0, scale: 0.8 }}
       animate={{ rotate: 90, scale: 1 }}
       transition={{ duration: 3, repeat: Infinity, ease: "easeInOut", repeatType: "reverse" }}
-      style={{ originX: "50%", originY: "50%" }}
+      style={{ transformOrigin: "center" }}
     />
     <motion.circle
       cx="16"
@@ -68,9 +68,7 @@ export default function App() {
           {/* Mobile Nav */}
           <div className="md:hidden">
             <Sheet>
-              <SheetTrigger render={<Button variant="ghost" size="icon" />}>
-                <Menu className="w-5 h-5" />
-              </SheetTrigger>
+              <SheetTrigger render={<Button variant="ghost" size="icon"><Menu className="w-5 h-5" /></Button>} />
               <SheetContent side="right" className="w-[300px] sm:w-[400px]">
                 <nav className="flex flex-col gap-4 mt-8">
                   <a href="#products" className="text-lg font-medium">Products</a>
@@ -454,13 +452,13 @@ export default function App() {
                 Building the foundational infrastructure for the next generation of software companies.
               </p>
               <div className="flex gap-4">
-                <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-full bg-secondary flex items-center justify-center hover:bg-primary/20 cursor-pointer transition-colors">
+                <a href="https://github.com/SmylerTech" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-full bg-secondary flex items-center justify-center hover:bg-primary/20 cursor-pointer transition-colors">
                   <Github className="w-4 h-4" />
                 </a>
-                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-full bg-secondary flex items-center justify-center hover:bg-primary/20 cursor-pointer transition-colors">
+                <a href="https://twitter.com/SmylerTech" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-full bg-secondary flex items-center justify-center hover:bg-primary/20 cursor-pointer transition-colors">
                   <Twitter className="w-4 h-4" />
                 </a>
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-full bg-secondary flex items-center justify-center hover:bg-primary/20 cursor-pointer transition-colors">
+                <a href="https://linkedin.com/company/smylertech" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-full bg-secondary flex items-center justify-center hover:bg-primary/20 cursor-pointer transition-colors">
                   <Linkedin className="w-4 h-4" />
                 </a>
               </div>
